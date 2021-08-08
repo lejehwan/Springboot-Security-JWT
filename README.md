@@ -1,6 +1,6 @@
 # Springboot-Security-JWT
 
-Springboot Security는 기본적으로 세션을 사용한 서버 기반의 인증 방식을 사용한다.
+Springboot Security는 기본적으로 세션을 사용한 서버 기반의 인증 방식을 사용한다. 
  => 사용자 정보를 메모리와 DB에 저장하고, 모든 서버에게 세션의 정보를 공유하므로 중앙세션관리 서버를 사용한다.
 ___
 
