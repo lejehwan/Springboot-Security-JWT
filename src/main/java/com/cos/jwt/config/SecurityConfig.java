@@ -22,7 +22,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .addFilter(corsFilter)// @CrossOrigin(인증 X), 시큐리티 필터에 등록 (인증 O)
                 .formLogin().disable()
-                .httpBasic().disable()
+                .httpBasic().disable()// Bearer방식 사용
                 .authorizeRequests()
                 .antMatchers("/api/v1/user/**")
                 .access("hasRole('ROLE_USER') or hasRole('ROLE_MANAGER') or hasRole('ROLE_ADMIN')")
